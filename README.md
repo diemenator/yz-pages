@@ -1,1 +1,3 @@
-# yz-pages
+# content
+
+[memes](meme-gallery/index.md)
