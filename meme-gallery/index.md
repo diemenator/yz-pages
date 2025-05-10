@@ -261,7 +261,7 @@ Collection of memes I keep around for **cultural reference**.
 </div></div>
 <style>
 :root {
-    /*layout sized*/
+    /*layout size*/
     --gallery-width: 40rem;
     --gallery-expanded-width: 50rem;
     --gallery-item-image-height: 7rem;
@@ -337,6 +337,13 @@ Collection of memes I keep around for **cultural reference**.
     box-shadow: var(--box-shadow);
     border-radius: var(--corner-radius);
 }
+/*fix/remove the overlapped shadow of collapsed content bounding box */
+.gallery-item:hover {
+    box-shadow: none;
+}
+.gallery-item-content:hover {
+    box-shadow: var(--box-shadow);
+}
 .gallery-item img {
     border-radius: var(--corner-radius) 0 0 0;
     min-width: var(--gallery-width);
@@ -356,26 +363,6 @@ Collection of memes I keep around for **cultural reference**.
 .image-gallery div {
     background: black;
     color: black;
-}
-/*dark mode reverse*/
-@media (prefers-color-scheme: dark) {
-    :root {
-        --box-shadow: 0.2rem 0.2rem 1rem rgba(0,0,0,0.5);
-    }
-    .image-gallery * {
-        background: black;
-        color: white;
-    }
-}
-/*light mode reverse*/
-@media (prefers-color-scheme: light) {
-    :root {
-        --box-shadow: 0.2rem 0.2rem 1rem rgba(255,255,255,0.5);
-    }
-    .image-gallery * {
-        background: white;
-        color: black;
-    }
 }
 /* Add media query for mobile devices */
 @media (max-width: 768px) {

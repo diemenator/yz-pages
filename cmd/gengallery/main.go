@@ -48,7 +48,7 @@ func NewPathConfig() PathConfig {
 	}
 }
 
-// GalleryItem represents a single item in the gallery
+// GalleryItem represents a single item in the gallery. we annotate it with json tags to have it dumpable
 type GalleryItem struct {
 	Filename string `json:"filename"`
 	Caption  string `json:"caption"`
