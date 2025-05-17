@@ -11,7 +11,7 @@ Let's go.
 
 ## ON SPEAKING
 
-This is a golden talk on how to talk like a professional. It's an old dude I never met who claims to be an MIT professor (he probably is) but dang the talk really is useful to fun to study. 
+This is a golden talk on how to talk like a professional. It's an old dude I never met who claims to be an MIT professor (he probably is) but dang the talk really is useful and fun to study. Grab a notebook and a pen and take notes, you will not regret it.
 
 
 https://www.youtube.com/watch?v=Unzc731iCUY
