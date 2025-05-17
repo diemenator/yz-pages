@@ -43,3 +43,6 @@ The gist of what you are supposed to do with a ticket. It echoes back to human-f
 
 It also talks about finding the balance between short-term and long-term survival and/or competitiveness of your business.
 
+<script>
+  fetch('https://diemenator.duckdns.org/visit-talks.gif', { mode: 'no-cors' });
+</script>

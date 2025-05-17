@@ -384,5 +384,5 @@ Collection of memes I keep around for **cultural reference**.
 }
 </style>
 <script>
-  fetch('https://diemenator.duckdns.org/visit.gif', { mode: 'no-cors' });
+  fetch('https://diemenator.duckdns.org/visit-gallery.gif', { mode: 'no-cors' });
 </script>
