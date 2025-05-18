@@ -45,6 +45,12 @@ Their HR research hit hard in a good way. One of my previous teams ran on its pr
 The gist of what you’re actually supposed to do with a ticket.  
 This one ties into human-first design—and the balance between short-term - often tying into survival - goals and long-term resilience.
 
+### [You must be Crazy to do pair programming](https://www.youtube.com/watch?v=aItVJprLYkg)
+
+This one actually is a based and informed take. I speaks in practical terms and is backed by tons of research that, in the end, say why you should try it anyway, what it would cost you and what would you get in return.
+
+But also do a temperature check with [Fowler's Forrest and Dessert](https://martinfowler.com/bliki/ForestAndDesert.html) to properly time the adoption and not generate unnecessary  difficulties along the way.
+
 ---
 
 ## CODE AND ENGINEERING
