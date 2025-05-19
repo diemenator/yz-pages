@@ -362,7 +362,7 @@ Collection of memes I keep around for **cultural reference**.
 }
 .image-gallery div {
     background: black;
-    color: black;
+    color: white;
 }
 /* Add media query for mobile devices */
 @media (max-width: 768px) {
