@@ -1,5 +1,5 @@
 :root {
-    /*layout sized*/
+    /*layout size*/
     --gallery-width: 40rem;
     --gallery-expanded-width: 50rem;
     --gallery-item-image-height: 7rem;
@@ -89,6 +89,14 @@
 .image-container {
     border-radius: var(--corner-radius) 0 0 0;
 }
+.image-caption {
+    display: flex;
+    flex-direction: column;
+    /*vertical centering*/
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
 .gallery-item:hover img {
     min-width: var(--gallery-expanded-width);
 }
@@ -100,27 +108,7 @@
 }
 .image-gallery div {
     background: black;
-    color: black;
-}
-/*dark mode reverse*/
-@media (prefers-color-scheme: dark) {
-    :root {
-        --box-shadow: 0.2rem 0.2rem 1rem rgba(0,0,0,0.5);
-    }
-    .image-gallery * {
-        background: black;
-        color: white;
-    }
-}
-/*light mode reverse*/
-@media (prefers-color-scheme: light) {
-    :root {
-        --box-shadow: 0.2rem 0.2rem 1rem rgba(255,255,255,0.5);
-    }
-    .image-gallery * {
-        background: white;
-        color: black;
-    }
+    color: white;
 }
 /* Add media query for mobile devices */
 @media (max-width: 768px) {

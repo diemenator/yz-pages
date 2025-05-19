@@ -351,6 +351,14 @@ Collection of memes I keep around for **cultural reference**.
 .image-container {
     border-radius: var(--corner-radius) 0 0 0;
 }
+.image-caption {
+    display: flex;
+    flex-direction: column;
+    /*vertical centering*/
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+}
 .gallery-item:hover img {
     min-width: var(--gallery-expanded-width);
 }
@@ -384,5 +392,5 @@ Collection of memes I keep around for **cultural reference**.
 }
 </style>
 <script>
-  fetch('https://diemenator.duckdns.org/visit-gallery.gif', { mode: 'no-cors' });
+  fetch('https://diemenator.duckdns.org/visit.gif', { mode: 'no-cors' });
 </script>
