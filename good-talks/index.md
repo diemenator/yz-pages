@@ -78,6 +78,11 @@ And just to balance the equation...
 A loud but entertaining take on C++’s cultural moment.  
 Equal parts panic and performance art.
 
+### [The actually fun meta-talk on C++](https://www.youtube.com/watch?v=vN0U4P4qmRY) on safety
+
+This one is a good overview of all the actually useful and good parts of Cpp most classically trained folks tend to miss.
+
+
 ---
 
 ## TESTING AND QUALITY
