@@ -1945,7 +1945,6 @@
           const hp = [posHead[0], posHead[1] + (charState.slotHeadY || 0), posHead[2] + (charState.slotHeadZ || 0)];
           drawBlobBone(hp, [0, 0, 0], [0.12 * hs, 0.13 * hs, 0.13 * hs], kbCol('head', '#d9a78b'));
           drawBlobBone([hp[0], hp[1] + 0.055 * hs, hp[2] - 0.015], [0, 0, 0], [0.118 * hs, 0.078 * hs, 0.128 * hs], [0.24, 0.19, 0.17]);
-          drawBlobBone([hp[0] + 0.032, hp[1] + 0.048, hp[2] + 0.115], [0, 0, 0], [0.036, 0.014, 0.012], [0.95, 0.94, 0.90]);
         } else {
           const m = getKitbashMesh(kb.head);
           if (m) { const sc = (0.25 * hs) / (m.span || 1); drawAccessoryMesh(m, [posHead[0], posHead[1] + 0.02 + (charState.slotHeadY || 0), posHead[2] + (charState.slotHeadZ || 0)], headRot, [sc * hb, sc, sc * hb], kbCol('head', '#e2b89b')); }
@@ -2214,11 +2213,12 @@
       } else if (charState.presetId === 'MCCLAINE') {
         const skinCol = [0.84, 0.65, 0.52], hairCol = [0.24, 0.19, 0.17], bandageCol = [0.95, 0.94, 0.90], holsterCol = [0.18, 0.12, 0.08];
         drawBlobBone([posHead[0], posHead[1] + 0.055 * hs + (charState.slotHeadY || 0), posHead[2] - 0.015 + (charState.slotHeadZ || 0)], [0, 0, 0], [0.118 * hs, 0.078 * hs, 0.128 * hs], hairCol);
-        drawBlobBone([posHead[0] + 0.032, posHead[1] + 0.048 + (charState.slotHeadY || 0), posHead[2] + 0.115 + (charState.slotHeadZ || 0)], [0, 0, 0], [0.036, 0.014, 0.012], bandageCol);
         drawBlobBone([(sL[0] + handL[0]) * 0.5, (sL[1] + handL[1]) * 0.5, (sL[2] + handL[2]) * 0.5], [0, 0, 0.35], [0.048, 0.22, 0.048], skinCol);
         drawBlobBone([(sR[0] + handR[0]) * 0.5, (sR[1] + handR[1]) * 0.5, (sR[2] + handR[2]) * 0.5], [0, 0, -0.35], [0.048, 0.22, 0.048], skinCol);
         drawBlobBone([posTorso[0] + 0.145 * stanceLead, posTorso[1] + 0.02, posTorso[2] + 0.01], [0, 0, 0], [0.028, 0.075, 0.052], holsterCol);
         drawBlobBone(handL, [0, 0, 0], [0.062, 0.058, 0.066], bandageCol);
+        drawBone([tFrontFoot[0], tFrontFoot[1] + 0.01, tFrontFoot[2] + 0.02 * stanceLead], [0, 0.26 * stanceLead, 0], [0.095, 0.025, 0.08], bandageCol);
+        drawBone([tRearFoot[0], tRearFoot[1] + 0.01, tRearFoot[2] - 0.02 * stanceLead], [0, -0.16 * stanceLead, 0], [0.095, 0.025, 0.08], bandageCol);
         drawBlobBone([handR[0], handR[1] + 0.055, handR[2] + 0.02], [0, 0, 0], [0.008, 0.042, 0.008], [0.76, 0.60, 0.38]);
         drawBlobBone([handR[0], handR[1] + 0.095, handR[2] + 0.02], [0, 0, 0], [0.014, 0.016, 0.014], [0.85, 0.14, 0.10], 0.25);
         drawGpuFlame([handR[0], handR[1] + 0.115, handR[2] + 0.02], 0.11, [1.0, 0.92, 0.45], [1.0, 0.38, 0.08]);
